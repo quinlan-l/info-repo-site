@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://docs.1369.ml/info-repo-vuepress/sitemap.xml
