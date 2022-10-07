@@ -3,7 +3,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   
-  base: "/info-repo-vuepress/",
+  base: "/",
 
   dest: "./dist",
 
