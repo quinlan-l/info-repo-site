@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://docs.1369.ml/info-repo-vuepress/sitemap.xml
+Sitemap: https://docs.1369.ml/sitemap.xml
