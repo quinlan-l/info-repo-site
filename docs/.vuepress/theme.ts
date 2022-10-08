@@ -9,7 +9,7 @@ export default hopeTheme({
   // 部署到哪里
   hostname: "https://docs.1369.ml",
 
-  repo: "quinlan-l/info-repo-vuepress",
+  repo: "quinlan-l/info-repo-site",
 
   author: {
     name: 'quinlan-l',
@@ -21,7 +21,9 @@ export default hopeTheme({
   /* 外观选项 */
 
   // 纯净模式
-  pure: false,
+  pure: true,
+
+  darkmode: "toggle",
 
   themeColor: {
     blue: "#2196f3",
@@ -38,9 +40,51 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
+  // 导航、标题、文章属性
+  breadcrumb: true,
+  breadcrumbIcon: true,
+  titleIcon: true,
+  pageInfo: [
+    // "Author", "Date", 
+    "Original", "Category", "Tag", 
+    "Word", "ReadingTime", "PageView"
+  ],
+
+  // 源文件
+  editLink: true,
+  docsBranch: "mst",
+
   /* 多语言选项 */
 
   locales: {
+    // 默认是中文
+    "/": {
+
+      //布局选项
+      navbar: zhNavbar,
+      sidebar: zhSidebar,
+  
+      // 源文件
+      metaLocales: {
+        editLink: "在 GitHub 上编辑此页",
+      },
+
+      // 页脚
+      displayFooter: false,
+      footer: "默认页脚",
+      
+      // 博客选项
+      blog: {
+        name: "quinlan-l",
+        avatar: "/logo.svg",
+        description: "无业游民",
+        timeline: "to do means no do",
+        intro: "https://github.com/quinlan-l",
+        medias: {
+          Github: "https://github.com/quinlan-l"
+        },
+      },
+    },
     // "/en/": {
     //   // navbar
     //   navbar: enNavbar,
@@ -61,37 +105,6 @@ export default hopeTheme({
     //     editLink: "Edit this page on GitHub",
     //   },
     // },
-
-    // 默认是中文
-    "/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      displayFooter: true,
-
-      footer: "默认页脚",
-
-      
-      // 博客选项
-      blog: {
-        name: "quinlan-l",
-        avatar: "/logo.svg",
-        description: "无业游民",
-        intro: "https://github.com/quinlan-l",
-        medias: {
-          Github: "https://github.com/quinlan-l"
-        },
-        articleInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word"],
-      },
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
   },
 
   // 加密文档

@@ -1,7 +1,11 @@
 ---
 home: true
 layout: Blog
+
+shortTitle: 家
 title: 主页
+icon: home
+
 heroImage: /logo.svg
 heroText: 一闪亮晶
 bgImage: /star.jpg

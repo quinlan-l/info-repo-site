@@ -1,10 +1,20 @@
 ---
 dir:
-  text: 门道
-  order: 1
----
+  text: 道
 
-# 前言
+shortTitle: 道
+title: “道”概述
+icon: creative
+index: false
+
+category: 
+  - readme
+tag:
+  - 概述
+
+article: false
+timeline: false
+---
 
 世上本无路，直到有人走；
 

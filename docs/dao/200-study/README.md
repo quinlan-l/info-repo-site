@@ -1,11 +1,22 @@
 ---
 dir:
   text: 学习
+  icon: study
   order: 200
+
+shortTitle: 学习
+title: 学习概述
+icon: study
+index: false
+
+category: 
+  - readme
+tag:
+  - 概述
+
+article: false
+timeline: false
 ---
-
-# 学习概述
-
 
 ## 何谓学习
 
