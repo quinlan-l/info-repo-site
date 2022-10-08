@@ -1,16 +1,15 @@
 ---
 dir:
   text: 能力
-  icon: ability
+  icon: folder
   order: 250
 
 shortTitle: 能力
 title: 能力概述
-icon: ability
 index: false
 
 category: 
-  - readme
+  - README
 tag:
   - 概述
 

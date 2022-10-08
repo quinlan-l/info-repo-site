@@ -1,16 +1,15 @@
 ---
 dir:
   text: 学习
-  icon: study
+  icon: folder
   order: 200
 
 shortTitle: 学习
 title: 学习概述
-icon: study
 index: false
 
 category: 
-  - readme
+  - README
 tag:
   - 概述
 

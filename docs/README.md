@@ -21,6 +21,4 @@ projects:
     name: 书签
     desc: 浏览器书签
     link: /bookmark
-
-footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ---

@@ -8,7 +8,7 @@ icon: creative
 index: false
 
 category: 
-  - readme
+  - README
 tag:
   - 概述
 

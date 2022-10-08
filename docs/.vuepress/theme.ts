@@ -70,8 +70,9 @@ export default hopeTheme({
       },
 
       // 页脚
-      displayFooter: false,
-      footer: "默认页脚",
+      displayFooter: true,
+      footer: "Copyright © 2022 quinlan-l",
+      copyright: false,
       
       // 博客选项
       blog: {

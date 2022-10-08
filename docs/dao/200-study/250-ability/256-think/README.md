@@ -1,16 +1,15 @@
 ---
 dir:
   text: 意
-  icon: question
+  icon: folder
   order: 256
 
 shortTitle: 意
 title: “意”概述
-icon: question
 index: false
 
 category: 
-  - readme
+  - README
 tag:
   - 概述
 
