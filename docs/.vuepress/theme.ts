@@ -66,7 +66,7 @@ export default hopeTheme({
   
       // 源文件
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "编辑此页",
       },
 
       // 页脚

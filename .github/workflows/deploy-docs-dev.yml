@@ -1,9 +1,9 @@
-name: 部署生产环境文档
+name: 部署测试环境文档
 
 on:
   push:
     branches:
-      - mst
+      - dev
 
 jobs:
   deploy-gh-pages:
@@ -36,6 +36,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 这是文档部署到的分支名称
+          repository-name: quinlan-l/info-repo-dev
+          token: ${{ secrets.WF_TOKEN_FOR_INFO_REPO }}
           branch: gh-pages
           folder: dist
