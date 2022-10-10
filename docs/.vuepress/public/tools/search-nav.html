@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>搜索导航</title>
+    <style>
+        body {
+            background-color: #17181a;
+        }
+        
+        #search_banner {
+            width: 80%;
+            max-width: 840px;
+            margin: 350px auto 0;
+            text-align: center;
+        }
+        
+        #search_input {
+            margin-top: 48px;
+            position: relative;
+        }
+        
+        select {
+            height: 52px;
+            padding: 0 52px;
+            font-size: 20px;
+            color: #eef0f4;
+            border: 0;
+            background-color: rgba(238, 240, 244, .12);
+        }
+        
+        #search_input_text {
+            width: 100%;
+            height: 52px;
+            padding: 0 52px;
+            box-sizing: border-box;
+            border-radius: 26px;
+            font-size: 20px;
+            background-color: rgba(238, 240, 244, .12);
+            border: 0;
+            color: #eef0f4;
+        }
+        
+        #search_input_right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            content: "";
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            background: url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_return.0d4e04d8.png) no-repeat;
+            background-size: 100%;
+        }
+        
+        #search_btn {
+            background-color: #99ff;
+            color: white;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="search_banner">
+        <select id="search_select"></select>
+        <div id="search_input">
+            <input id="search_input_text" type="text" placeholder="Search..." autofocus="autofocus" autocomplete="off">
+            <span id="search_input_right" onclick="goSearch()"></span>
+        </div>
+        <!-- <button id="search_btn" onclick="goSearch()">Go</button> -->
+    </div>
+    <script>
+        // site data
+        var siteData = '[{"id":"0","name":"Google","url":"https://www.google.com/search?q="},{"id":"1","name":"搜狗","url":"https://www.sogou.com/web?query="},{"id":"2","name":"Bing","url":"https://www.bing.com/search?q="},{"id":"3","name":"百度","url":"https://www.baidu.com/s?wd="},{"id":"4","name":"Wikipedia镜像","url":"https://emw.1369.ml/w/index.php?search="},{"id":"5","name":"维基百科镜像","url":"https://zmw.1369.ml/w/index.php?search="},{"id":"6","name":"知乎","url":"https://www.sogou.com/sogou?insite=zhihu.com&query="},{"id":"7","name":"微信","url":"https://weixin.sogou.com/weixin?type=2&query="},{"id":"8","name":"豆瓣","url":"https://www.douban.com/search?q="},{"id":"9","name":"Stack Overflow","url":"https://stackoverflow.com/search?q="},{"id":"10","name":"Zlibrary镜像","url":"https://zl.1369.ml/s/"}]'
+        sites = JSON.parse(siteData);
+
+        // select options
+        selectObj = document.getElementById("search_select");
+        sites.forEach(site => {
+            option = document.createElement("option");
+            option.innerHTML = site.name
+            if (site.id == 1) {
+                option.selected = true;
+            }
+            selectObj.options.add(option);
+        });
+
+
+        searchBox = document.getElementById("search_input_text");
+        searchBox.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                goSearch();
+            }
+        });
+
+        function goSearch() {
+            var input = document.getElementById("search_input_text");
+            var keyword = input.value;
+            if (keyword == null || keyword == "") {
+                // input.focus();
+                return;
+            }
+
+            // select which search engine
+            selectIdx = document.getElementById("search_select").selectedIndex;
+            console.log(selectIdx);
+
+            searchLink = sites[selectIdx].url + keyword;
+            window.open(searchLink, "_blank");
+        }
+    </script>
+</body>
+
+</html>
