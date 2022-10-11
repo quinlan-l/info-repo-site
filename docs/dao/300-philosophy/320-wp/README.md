@@ -9,11 +9,8 @@ title: 外国哲学概述
 index: false
 
 category: 
-  - readme
-tag:
-  - 概述
+  - README
 
-article: false
 timeline: false
 ---
 

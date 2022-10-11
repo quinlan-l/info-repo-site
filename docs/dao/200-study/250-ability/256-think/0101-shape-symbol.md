@@ -1,7 +1,10 @@
 ---
-shortTitle: 英文符号
+shortTitle: 形象·英文符号
 title: 英文符号 | symbol
 icon: markdown
+tags:
+  - 符号
+  - 规范
 ---
 
 ## "."
