@@ -71,7 +71,7 @@ export default hopeTheme({
 
       // 页脚
       displayFooter: true,
-      footer: "Copyright © 2022 quinlan-l",
+      footer: "Copyright © 2022-2022 <a href='https://github.com/quinlan-l'>Quinlan</a> All Rights Reserved.",
       copyright: false,
       
       // 博客选项

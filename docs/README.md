@@ -2,14 +2,15 @@
 home: true
 layout: Blog
 
-shortTitle: 家
-title: 主页
+title: 家
 icon: home
 
-heroImage: /logo.svg
+heroImage: false
+heroText: false
 bgImage: /star.jpg
-heroFullScreen: true
 tagline: <ul style="text-align:left"><li>问：明日复明日？</li><li>答：莫等闲。</li><li>A： TODO Means No Do.</li></ul>
+heroFullScreen: true
+
 projects:
   - icon: project
     name: 一生之道
