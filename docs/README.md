@@ -6,9 +6,9 @@ title: 家
 icon: home
 
 heroImage: false
-heroText: false
+heroText: 问曰：明日复明日？
 bgImage: /star.jpg
-tagline: <ul style="text-align:left"><li>问：明日复明日？</li><li>答：莫等闲。</li><li>A： TODO Means No Do.</li></ul>
+tagline:  答曰：莫等闲。TODO Means No Do.
 heroFullScreen: true
 
 projects:
